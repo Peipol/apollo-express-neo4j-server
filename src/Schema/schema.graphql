@@ -1,0 +1,19 @@
+type Movie {
+  title: String
+  year: Int
+  imdbRating: Float
+  genres: [Genre] @relation(name: "IN_GENRE", direction: "OUT")
+  similar: [Movie]
+    @cypher(
+      statement: """
+      MATCH (this)<-[:RATED]-(:User)-[:RATED]->(s:Movie)
+      WITH s, COUNT(*) AS score
+      RETURN s ORDER BY score DESC LIMIT {first}
+      """
+    )
+}
+
+type Genre {
+  name: String
+  movies: [Movie] @relation(name: "IN_GENRE", direction: "IN")
+}

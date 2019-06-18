@@ -1,0 +1,45 @@
+{
+  "name": "apollo-server-express-neo4j-minimal-backend",
+  "version": "1.0.0",
+  "description": "A quick way to implement a backend with few files to understand it better. Learn the basics of Apollo, Neo4j, Express, GraphQL, GrandStack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js",
+    "build": "babel ./src/index.js -d dist",
+    "start:babel": "nodemon --exec babel-node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peipol/apollo-server-express-neo4j-minimal-backend.git"
+  },
+  "keywords": [
+    "node",
+    "apollo",
+    "server",
+    "graphql",
+    "neo4j",
+    "express"
+  ],
+  "author": "Peipol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Peipol/apollo-server-express-neo4j-minimal-backend/issues"
+  },
+  "homepage": "https://github.com/Peipol/apollo-server-express-neo4j-minimal-backend#readme",
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/runtime": "7.4.4",
+    "babel-cli": "^6.26.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.6.3",
+    "graphql": "^14.3.1",
+    "neo4j-driver": "^1.7.5",
+    "neo4j-graphql-js": "^2.6.3"
+  }
+}
