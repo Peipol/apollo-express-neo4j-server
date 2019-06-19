@@ -4,4 +4,5 @@ A quick way to implement a backend to understand it better. Learn the basic of A
 
 # Heavily inspired by:
 
-https://grandstack.io/docs/getting-started-grand-stack-starter.html
+[GrandStack](https://grandstack.io/docs/getting-started-grand-stack-starter.html)
+[GRANDstack starter Repo](https://github.com/grand-stack/grand-stack-starter)
